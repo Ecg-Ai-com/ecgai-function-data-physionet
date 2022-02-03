@@ -1,0 +1,11 @@
+# Do not include azure-functions-worker as it may conflict with the Azure Functions platform
+
+azure-functions
+pydantic>=1.9.0
+numpy>=1.22.1
+wfdb~=3.4.1
+fluentcheck~=0.2.0
+requests>=2.27.1
+pandas==1.4.0
+pytest>=6.2.5
+ecgai-logging>=0.0.4
