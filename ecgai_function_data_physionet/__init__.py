@@ -7,7 +7,7 @@ from ecgai_training_data_physionet.ptbxl import PtbXl
 async def get_record(record_id: int) -> func.HttpResponse:
     try:
         physionet_data = PtbXl(data_location='data')
-        record_task = physionet_data.get_record(record_id=record_id)
+        record_task = physionet_data.get_record(record_id=record_id, sample_rate=100)
         ecg_record = await record_task
         return func.HttpResponse(body=ecg_record.to_json(), status_code=200)
     except Exception as e:
