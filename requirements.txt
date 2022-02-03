@@ -9,3 +9,4 @@ requests>=2.27.1
 pandas==1.4.0
 pytest>=6.2.5
 ecgai-logging>=0.0.4
+ecgai-training-data-physionet>=0.0.12
